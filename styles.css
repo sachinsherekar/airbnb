@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Inter:wght@200;300;400;500;600;700&family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@200;300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 01rem 5rem;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+.mid {
+    display: flex;
+    gap: 2rem;
+}
+.logo {
+    flex: 0.3;
+}
+.right {
+    display: flex;
+    flex: .3;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+}
+.menu {
+    background-color: white;
+    display: flex;
+    border-radius: 30px;
+    padding: 3px 8px;
+}
+.home {
+    
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.home>img {
+    width: 95%;
+    padding-bottom: 4rem;
+}
+/* search */
+.search-box {
+    background-color: black;
+    padding-block: 1rem;
+}
+form {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40px;
+    padding: 10px 1rem;
+    padding-left: 2rem;
+    max-width: 60%;
+    margin: auto;
+}
+.inputs>label {
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+form>div>input {
+    border: none;
+    outline: none;
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+.search-button {
+    background: #DE3151;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+.inspiration {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.inspiration>img {
+    width: 15rem;
+    object-fit: cover;
+}
+.discovers {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.discovers>img {
+    width: 49%;
+}
+.discover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.discover>img {
+    width: 80%;
+}
+.prefooter {
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.tabs {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.tabs>span {
+    margin-right: 1rem;
+    padding-bottom: 5px;
+    border-bottom: 1px solid grey;
+}
+.places {
+    margin-block: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+footer {
+    background-color: #F9FAFB;
+    padding: 2% 10%;
+    margin: auto;
+    margin-block: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+footer>div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+@media screen and (max-width: 768px){
+    nav {
+        padding: 10px;
+    }
+    .mid {
+        display: none;
+    }
+    .right {
+        flex: 1;
+    }
+    form {
+        max-width: 100%;
+    }
+    form>.inputs {
+        max-width: 20%;
+    }
+    form>.inputs>input {
+        font-size: 0.7rem;
+    }
+   
+    .home>img {
+        width: 100%;
+        padding: 2rem 0;
+    }
+    .inspiration {
+        width: 98%;
+    }
+    .inspiration>img {
+        width: 11rem;
+        object-fit: cover;
+        padding-bottom: 1rem;
+    }
+    .discovers {
+        width: 100%;
+        flex-direction: column;
+    }
+    .discovers>img {
+        width: 100%;
+    }
+    h3 {
+        text-align: center;
+    }
+    .discover>img {
+        width: 100%;
+    }
+    .tabs {
+        overflow: scroll;
+    }
+    .places {
+        grid-template-columns: 1fr 1fr;
+    }
+    footer {
+        grid-template-columns: 1fr 1fr;
+    }
+}

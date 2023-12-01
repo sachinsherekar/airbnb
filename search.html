@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="search.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./assets/logored.svg" alt="">
+        </div>
+        <div class="mid">
+            <form id="searchForm">
+                <p id="showCityName">City</p>
+                <p id="showDate">Feb</p>
+                <p id="showGuest">2 Guests</p>
+                <button class="search-button">
+                    <img src="./assets/searchIcon.svg" alt="">
+                </button>
+            </form>
+        </div>
+        <div class="right">
+            <a href="">Become a Host</a>
+            <img src="./assets/globe-black.svg" alt="">
+            <div class="menu">
+                <img src="./assets/menuIcon.svg" alt="">
+                <img src="./assets/profileIcon.svg" alt="">
+            </div>
+        </div>
+    </nav>
+    <div class="search-box">
+        <form id="searchForm">
+            <div class="inputs">
+                <label for="location">Location</label>
+                <input type="text" name="location" id="location" placeholder="Where are you going?">
+            </div>
+            <div class="inputs">
+                <label for="location">Check in</label>
+                <input type="date" name="checkin" id="checkin" placeholder="Add dates">
+            </div>
+            <div class="inputs">
+                <label for="location">Check out</label>
+                <input type="date" name="checkout" id="checkout" placeholder="Add dates">
+            </div>
+            <div class="inputs">
+                <label for="location">Guest</label>
+                <input type="number" id="guest" name="guest" placeholder="Add guests">
+            </div>
+            <button id="searchButton" class="search-button">
+                <img src="./assets/searchIcon.svg" alt="">
+            </button>
+        </form>
+    </div>
+    <div class="filters">
+        <select id="selectPrice">
+            <option disabled selected value="">Price</option>
+            <option value="0">any</option>
+            <option value="1000">upto 1000</option>
+            <option value="2000">upto 2000</option>
+            <option value="3000">upto 3000</option>
+            <option value="4000">upto 4000</option>
+            <option value="5000">upto 5000</option>
+            <option value="10000">upto 10000</option>
+        </select>
+        <select id="selectType">
+            <option disabled selected value="">Type of place</option>
+            <option value="">any</option>
+            <option value="Private room">Private room</option>
+            <option value="Entire serviced apartment">Entire serviced apartment</option>
+            <option value="Entire home">Entire home</option>
+            <option value="Entire guesthouse">Entire guesthouse</option>
+            <option value="Room in hotel">Room in hotel</option>
+            <option value="Entire condo">Entire condo</option>
+        </select>
+        <button id="toggleFreeCancellation">Free cancellation</button>
+        <button id="toggleWifi">Wifi</button>
+        <button id="toggleKitchen">Kitchen</button>
+        <button id="toggleAC">Air conditioning</button>
+        <button id="toggleWasher">Washer</button>
+        <button id="toggleIron">Iron</button>
+        <button id="toggleWorkspace">Dedicated workspace</button>
+        <button id="toggleFreeParking">Free parking</button>
+        <button id="toggleDryer">Dryer</button>
+        <button id="filters">Filters</button>
+    </div>
+    <section class="search-result">
+        <div class="hotelsdiv">
+            <h4 id="searchResultCount"></h4>
+            <div class="hotels">
+                
+            </div>
+        </div>
+        <div class="map" id="map">
+            <img src="https://joomly.net/frontend/web/images/googlemap/map.png" alt="">
+        </div>
+    </section>
+    <script src="search.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCY8uVpk5oLWMLzV0vOFt3T69lN9QYnFqA&callback=initMap"
+        async defer></script>
+</body>
+
+</html>

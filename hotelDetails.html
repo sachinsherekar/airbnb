@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+           <img src="./assets/logored.svg" alt="">
+        
+        </div>
+        <div class="mid">
+            <img src="./assets/hoteldetailssearch.svg" alt="">
+        </div>
+        <div class="menu">
+            <a href="">Become a Host</a>
+            <img src="./assets/menuIcon.svg" alt="">
+            <img src="./assets/profileIcon.svg" alt="">
+        </div>
+    </nav>
+    <section class="hotelDetailsDiv">
+        <h2 id="hotelName"></h2>
+          <div class="rating">
+            <div class="left">
+              <img src="./assets/star.svg" alt="">
+              <b id="rating">5.0</b>
+              <b id="reviewsCount"></b>
+              <img src="./assets/host.svg" id="superHost" alt="">
+              <p id="address">hostname</p>
+
+            </div>
+            <img src="https://cdn.discordapp.com/attachments/750764661980397598/1165302336986558574/image.png?ex=65465b5f&is=6533e65f&hm=b9b2b7944a52c0729ff530f6f088294d1e9a41bcf993c4eaa158dc83fc0e2a9e&" alt="">
+
+          </div>
+
+          <div class="imageDiv">
+            <div class="imageDiv_right">
+                <div><img src="" id="img1" alt=""></div>
+                <div><img src="" id="img2" alt=""></div>
+                <div><img src="" id="img3" alt=""></div>
+                <div><img src="" id="img4" alt=""></div>
+            </div>
+          </div>
+
+          <div class="hotelDesc">
+            <div class="hotelDesc_left">
+            <div class="hostInfo">
+                <div>
+                    <h3 id="hostInfo"></h3>
+                    <p id="features"></p>
+                </div>
+                <img src="" id="hostImg" alt="">
+               </div>
+
+               <button id="getDirectionBtn">Get Directions</button>
+                <hr style="background: #E5E7EB; opacity:0.3 ; margin-block: 1rem; ">
+              <div class="amenities" id="amenitiesDiv">
+
+            </div>
+          </div>
+          <div class="hotelDesc_right">
+            <div style="display: flex; justify-content: space-between;">
+                <h2 id="pricePerNight"></h2>
+                <div class="left">
+                    <img src="./assets/star.svg" alt="">
+                    <b id="rating">5.0</b>
+                    <b id="reviewsCounts"></b>
+                </div>
+            </div>
+            <div class="inputs">
+                <div class="dateInputs">
+                    <div style="border-right: 1px solid rgba(0, 0, 0, 0.288);">
+                        <label for="checkin">CHECK-IN</label>
+                        <input type="date" id="checkin">
+                    </div>
+                    <div>
+                        <label for="checkout">CHECK-OUT</label>
+                        <input type="date" id="checkout">
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: column; border-top: 1px solid rgba(0, 0, 0, 0.288);" >
+                    <label for="">GUEST</label>
+                    <input type="number" id="guest" placeholder="2 guests">
+                </div>
+            </div>
+            <button>Reserve</button>
+            <p style="text-align: center; margin-block: 0.7rem;">You won't be charged yet</p>
+            <div id="prices" style="display: flex; flex-direction: column;">
+
+            </div>
+            <div id="prices" style="display: flex; justify-content: space-between;">
+                <h4>Total</h4>
+                <h4 id="totalPrice">Total</h4>
+            </div>
+        </div>
+    </div>
+    </section>
+    <iframe id="map"  width="360" height="270" frameborder="0" style="border:0"></iframe>
+
+    <script src="hotelDetails.js"></script>
+</body>
+</html>

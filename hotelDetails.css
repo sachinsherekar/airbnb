@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    border-collapse: collapse;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.logo{
+    flex: 0.3;
+}
+.right{
+    display: flex;
+    flex: .3;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+
+.menu {
+    background-color: white;
+    display: flex;
+    border-radius: 30px;
+    padding: 3px 8px;
+}
+
+.hotelDetailsDiv {
+    padding-inline: 8%;
+    padding-top: 2%;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 0.8rem;
+}
+
+.left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.rating>img {
+    height: 1.3rem;
+}
+
+.imagesDiv {
+    width: 100%;
+    height: 26rem;
+    background-color: yellow;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.imagesDiv_left {
+    width: 50%;
+    height: 100%;
+    background-color: red;
+}
+
+.imagesDiv_right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#img1,
+#img2 {
+    border-bottom: 4px solid white;
+}
+
+.imagesDiv_right>div {
+    height: 50%;
+    width: 50%;
+    background-color: blue;
+    border-left: 4px solid white;
+}
+
+.imagesDiv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hotelDesc {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hotelDesc_left {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hotelDesc_right {
+    width: 30%;
+    border-radius: 8px;
+    border: 1px solid var(--gray-200, #E5E7EB);
+    background: var(--white, #FFF);
+    padding: 1rem;
+    box-shadow: 0px 10px 10px 0px rgba(31, 41, 55, 0.04), 0px 20px 25px 0px rgba(31, 41, 55, 0.10);
+    display: flex;
+    flex-direction: column;
+}
+
+.priceDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hostInfo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#hostImg {
+    height: 4rem;
+    border-radius: 50%;
+    width: 4rem;
+    object-fit: cover;
+}
+
+.amenities {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#prices {
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.hotelDesc_right label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    margin-block: 4px;
+}
+
+.hotelDesc_right button {
+    display: flex;
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex: 1 0 0;
+    border-radius: 8px;
+    background: #DE3151;
+    color: white;
+    margin-top: 1rem;
+    outline: none;
+    border: none;
+}
+.hotelDesc_right input {
+    border: none;
+    outline: none;
+}
+.inputs {
+    border: 1px solid rgba(0, 0, 0, 0.288);
+    border-radius: 10px;
+    margin-top: 0.5rem;
+}
+.inputs div {
+    padding: 0.2rem;
+}
+.dateInputs{
+    display: flex;
+}
+#map {
+    margin: auto;
+    width: 100%;
+    margin-block: 1rem;
+    height: 30rem;
+}
+
+#getDirectionBtn {
+    display: flex;
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex: 1 0 0;
+    border-radius: 8px;
+    background: #3182de;
+    color: white;
+    margin-top: 1rem;
+    outline: none;
+    border: none;
+    max-width: 8rem;
+    cursor: pointer;
+    max-height: 3rem;
+}
+@media screen and (max-width:768px) {
+    #map {
+        width: 100%;
+    }
+    nav {
+        padding: 10px;
+    }
+
+    .mid {
+        display: none;
+    }
+
+    .right {
+        flex: 1;
+    }
+
+    .hotelDetailsDiv {
+        padding: 0 4px;
+    }
+
+    .rating {
+        flex-direction: column;
+        font-size: 74%;
+        gap: 5px;
+    }
+
+    .left {
+        justify-content: start;
+    }
+
+    .rating>img {
+        width: 8rem;
+    }
+
+    .imagesDiv {
+        height: 15rem;
+    }
+
+    .hotelDesc {
+        flex-direction: column;
+    }
+
+    .hotelDesc_left {
+        width: 100%;
+    }
+
+    .hotelDesc_right {
+        width: 100%;
+    }
+}

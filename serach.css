@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Inter:wght@200;300;400;500;600;700&family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@200;300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 01rem 5rem;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.logo {
+    flex: 0.3;
+}
+
+.right {
+    display: flex;
+    flex: .3;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.mid>form {
+    font-weight: 600;
+    width: 32rem;
+    padding-block: 5px;
+    padding-right: 7px;
+}
+
+.mid>form>p {
+    border-right: 1px solid rgba(26, 26, 26, 0.24);
+    padding-right: 12px;
+}
+
+.menu {
+    background-color: white;
+    display: flex;
+    border-radius: 30px;
+    padding: 3px 8px;
+}
+
+.home {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.home>img {
+    padding-bottom: 4rem;
+}
+
+/* form */
+.search-box {
+    display: none;
+    margin-bottom: 1rem;
+}
+
+form {
+    border: 1px solid var(--gray-200, #E5E7EB);
+    box-shadow: 0px 4px 6px 0px rgba(31, 41, 55, 0.10), 0px 2px 4px 0px rgba(31, 41, 55, 0.06);
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40px;
+    padding: 10px 1rem;
+    padding-left: 2rem;
+    max-width: 60%;
+    margin: auto;
+}
+
+.inputs>label {
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+form>div>input {
+    border: none;
+    outline: none;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-button {
+    background: #DE3151;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+/* formend */
+.search-result {
+    margin-top: 4rem;
+    display: flex;
+    width: 100%;
+    padding-inline-start: 2%;
+    gap: 1rem;
+    overflow: hidden;
+}
+
+.hotelsdiv {
+    /* background-color: blue; */
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    overflow: scroll;
+}
+.hotelsdiv::-webkit-scrollbar{
+    display: none;
+}
+
+.hotels {
+    display: flex;
+    flex-direction: column;
+}
+
+.map {
+    width: 40%;
+    height: 80vh;
+}
+
+.map>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hotel {
+    display: flex;
+    gap: 1rem;
+    height: 15rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.29);
+    position: relative;
+}
+
+.imageDiv {
+    height: 100%;
+    width: 20rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.imageDiv>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hotelDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.price {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+#directionIcon {
+    height: 2rem;
+    position: absolute;
+    top: 4rem;
+    right: 1rem;
+    cursor: pointer;
+}
+#likeIcon {
+    height: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 3px;
+}
+
+hr {
+    opacity: 0.4;
+    width: 3rem;
+}
+
+.filters {
+    padding-inline: 2%;
+    display: flex;
+}
+
+.selected {
+    background-color: rgba(237, 1, 1, 0.849) !important;
+    color: white;
+}
+
+.filters {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    overflow: scroll;
+}
+.filters>select {
+    white-space: nowrap;
+    max-width: 10rem;
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 100px;
+    border: 1px solid var(--gray-200, #E5E7EB);
+    box-shadow: 0px 1px 2px 0px rgba(31, 41, 55, 0.08);
+    cursor: pointer;
+}
+.filters>button {
+    white-space: nowrap;
+    display: flex;
+    background-color: white;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 100px;
+    border: 1px solid var(--gray-200, #E5E7EB);
+    box-shadow: 0px 1px 2px 0px rgba(31, 41, 55, 0.08);
+    cursor: pointer;
+}
+.filters>button:hover {
+    background-color: rgba(0, 0, 0, 0.073);
+}
+.filters::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 10px;
+    }
+
+    .mid {
+        display: block;
+        position: absolute;
+        top: 3.5rem;
+        margin: auto;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        max-width: 70%;
+    }
+
+    .right {
+        flex: 1;
+    }
+
+    form {
+        max-width: 100%;
+    }
+
+    form>.inputs {
+        max-width: 20%;
+    }
+
+    form>.inputs>input {
+        font-size: 0.7rem;
+    }
+
+    .search-result {
+        flex-direction: column-reverse;
+        padding: 0;
+        margin-block: 1rem;
+    }
+
+    .filters {
+        margin-block: 5rem 1rem;
+        padding-inline: 2%;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .map {
+        height: 30vh;
+        width: 100%;
+    }
+
+    .hotelsdiv {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .hotel {
+        height: 11rem;
+        font-size: 80%;
+    }
+
+    .imageDiv {
+        width: 40%;
+        height: 100%;
+        background-color: grey;
+    }
+
+    .hotelDetails {
+        width: 60%;
+    }
+
+    .price {
+        position: static;
+    }
+
+    .features {
+        font-size: 0.6rem;
+    }
+
+    #likeIcon {
+        bottom: 5px;
+        right: 5px;
+        transform: scale(0.8);
+    }
+    #directionIcon {
+        right: 5px;
+    }
+}
